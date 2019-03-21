@@ -13,3 +13,35 @@
  *= require_tree .
  *= require_self
  */
+
+ .menu-icon {
+   color: white;
+   float: right;
+   font-size: 25px;
+   padding: 21px 0;
+   visibility: hidden;
+ }
+
+ /* タブレット向けレイアウト ==  ============================== */
+ @media (max-width:1000px) {
+
+   p{
+     color: red;
+   }
+ }
+
+ /* スマートフォン向けレイアウト ==  ============================== */
+ @media(max-width:670px ){
+   p{
+     color: #3ecdc6;
+   }
+   .header-menus{
+     display: none;
+   }
+   .menu-icon{
+     display: inline-block;
+   }
+ }
+
+
+ /* display: none;が効かない問題が発生中 */
